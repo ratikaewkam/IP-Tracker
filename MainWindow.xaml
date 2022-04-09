@@ -1,0 +1,27 @@
+﻿<Window x:Class="IP_Tracker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IP_Tracker"
+        mc:Ignorable="d"
+        Title="IP Tracker" Height="650" Width="800" ResizeMode="NoResize" WindowState="Normal" Icon="/icon.ico">
+    <Grid>
+        <Image x:Name="logoApp" HorizontalAlignment="Center" Height="50" Margin="0,25,0,0" VerticalAlignment="Top" Width="50" Source="/logo.png" Stretch="Fill"/>
+        <Label x:Name="nameApp" Content="IP Tracker" HorizontalAlignment="Center" Margin="0,98,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="25"/>
+        <Label x:Name="ipLabel" Content="IP Address" HorizontalAlignment="Left" Margin="140,171,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="ipData" HorizontalAlignment="Left" Margin="246,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Text="172.253.62.103" FontSize="14" Height="40"/>
+        <Button x:Name="checkButton" Content="Check" HorizontalAlignment="Left" Margin="520,166,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="checkButton_Click"/>
+        <Label x:Name="dataLabel" Content="Data" HorizontalAlignment="Left" Margin="140,235,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label x:Name="displayIP" Content="IP Address : None" HorizontalAlignment="Left" Margin="140,292,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="displayType" Content="Type : None" HorizontalAlignment="Left" Margin="482,292,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="displayCountry" Content="Country : None" HorizontalAlignment="Left" Margin="140,341,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="displayCity" Content="City : None" HorizontalAlignment="Left" Margin="482,341,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="displayPostal" Content="Postal : None" HorizontalAlignment="Left" Margin="140,393,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="displayCallingCode" Content="Calling Code : None" HorizontalAlignment="Left" Margin="482,393,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="displayLatitude" Content="Latitude : None" HorizontalAlignment="Left" Margin="140,448,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="displayLongitude" Content="Longitude : None" HorizontalAlignment="Left" Margin="482,448,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="aboutLabel" Content="About me" HorizontalAlignment="Left" Margin="140,533,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Image x:Name="aboutImage" HorizontalAlignment="Left" Height="80" Margin="246,507,0,0" VerticalAlignment="Top" Width="80" Source="/link.jpg" Stretch="Fill"/>
+    </Grid>
+</Window>
